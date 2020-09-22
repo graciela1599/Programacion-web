@@ -42,16 +42,32 @@ funcionan... Las del lado del usuario será después -->
         name: Te dice que te devolverá
 
         -->
+        <!-- Fieldset para agrupar elementos y dar valor semántico
+        Información en común
+        -->
+        <fieldset>
+            <!-- Legend, fieldset lo identifica como un valor propio del fieldset
+            
+            -->
+            <legend>Genero</legend>
+            <input type="radio" name="genero" value="Hombre" checked> Hombre
+            <input type="radio" name="genero" value="Mujer"> Mujer
+            <input type="radio" name="genero" value="Otro"> Otro
 
-        <input type="radio" name="genero" value="Hombre" checked> Hombre
-        <input type="radio" name="genero" value="Mujer"> Mujer
-        <input type="radio" name="genero" value="Otro"> Otro
+        </fieldset>
+
         <h3>SELECT </h3>
         <!-- El nombre de lo que enviaras en el formulario-->
+        <label for="Frutas">Frutas</label>
         <select name="Frutas"> 
+        <optgroup label="favoritas"> 
             <option value="fresa">Fresa</option>
             <option value="naranja">Naranja</option>
-            <option value="uva">Uva</option>
+        </optgroup>
+        <optgroup label = "Otras">
+               <option value="uva">Uva</option>
+        </optgroup>
+  
         </select>
 
         <h3>textarea</h3>
@@ -60,20 +76,82 @@ funcionan... Las del lado del usuario será después -->
         <!-- usado en tiendas en línea. 
         Varias sugerencias dependiendo de 
         lo que se esta encontrando -->
-        <!-- Dependiendo que ocupas, se utilizará el Datalist o no :D-->
+        <!-- Dependiendo que ocupas, 
+            se utilizará el Datalist o no :D
+            Datalist: Puede ser no soportado para otros navegadores
+            lo recomendado, es utilizar el input:search uwu
+        
+        -->
         <h3>Datalist</h3>
-        <label>buscador:</label>
+        <label for="buscador">buscador:</label>
         <input list="buscador">
         <datalist id="buscador">
             <option value="internet Explorer"></option>
             <option value="Chrome"></option>
             <option value="Opera"></option>
         </datalist>
+        <h3>Constraseña</h3>
+        <label for="password">constraseña</label>
+        <input type="password" name="" id="" required>
+        <!-- No necesariamente marcada una como default 
+        -->
+        <!-- name = declara el tipo del dato xd-->
+        <h3>Checked</h3>
+        <input type="checkbox" name="hola" value="valor1" checked id=""> Hola
+        <input type="checkbox" name="adios" value="valor2"> Adiós
+
+        <!-- Más útil usando javascript-->
+        <h3>color</h3>
+        <input type="color" name="" id="">
+        <!--- Dificil de cambiar en css -->
+        <h3>fecha</h3>
+        <input type="date" value="2000-12-06" min="2000-12-01" name="" id="">
+
+        <!-- Obsoleto posiblemente xd -->
+        <h3></h3>
+        <input type="datetime-local" name="" id="">
+
+        <input type="month" name="" id="">
+
+        <input type="week" name="" id="">
+        <input type="time" name="" id="">
+
+        <h3>Email</h3>
+        <input type="email" name="" id="">
+        <!--
+            Ocupas poner toda la URL, junto con el protocolo
+        -->
+        <h3>Url</h3>
+        <input type="url" name="" id="">
+        <h3>NUMERO</h3>
+        <!--
+
+        -->
+        <input type="number" min="1" max="2" name="" step="1" id=" ">
+
+        <h3>RANGO</h3>
+        <input type="range" min="0" max="999" step="10" name="" id="">
+        <h3>Search</h3>
+        <input type="search" name="" id="">
+        <!-- Se ocupa vaidar, ya que te permite poner letras -->
+        <h3>Telefono</h3>
+        <input type="tel" name="" id="">
+
+        <!-- Su atributo unico es multiple
+        Tambien el tipo de archivos
+        El peso del archivo-->
+        <h3>Archivos</h3>
+        <input type="file" multiple name="" id="">
+        <h3></h3>
         <!-- El más utilizado es el primero-->
         <input type="submit" value="Enviar">
-        <input type="image" src="" alt="">
+        <input type="image">
         <!-- Diseño del boton :D -->
+
         <button>Enviar</button>
+        <h3>Resetear</h3>
+        <input type="reset" value="Limpiar input">
+        <button type="reset">Limpiar Button</button>
     </form>
 </body>
 
