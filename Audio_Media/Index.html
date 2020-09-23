@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Estilo con etiqueta de estilo
+    CSS -> no es recomendado es de modo directo
+    -->
+    <style>
+        video {
+            border-radius: 5px;
+            /*Para sombra*/
+            box-shadow: 10px 10px black;
+            /* Solo usarlos aquí */
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1> Multimedia </h1>
+        <article>
+            <h3>Audio</h3>
+            <!-- Controls es la etiqueta para manejar audio 
+            autoplay-chrome no lo soporta - safari si lo soporta - Firefox si lo muestra pero sin sonido xD
+            Muted-chrome tampoco lo soporta - safari si lo soporta
+            loop - de nuevo se vuelve a reproducir
+            preload - se cargue antes de reproducirse 
+            
+            MP3 y MP4 es el recomendado para utilizarse
+            Se debe investigr para 
+            -->
+
+            <audio controls loop>
+                <!-- Se va a mostrar la que sea compatible-->
+                <source  src="media/audio/audiohtml5.mp4" type="audio/mp4">
+                <source  src="media/audio/audiohtml5.ogg" type="audio/ogg">
+            </audio>
+            <!-- No soportado por Zafari -->
+            <audio controls>
+                <source src="media/audio/musica.mp3">
+            </audio>
+        </article>
+        <article>
+            <h3>Video</h3>
+            <!-- poster: Ruta de una imagen por defecto -->
+            <video controls poster="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/HTML_logo.png/250px-HTML_logo.png">
+                <source src="media/video/Chrome_ImF.mp4" type="video/mp4">
+                <source src="media/video/Chrome_ImF.ogv" type ="video/ogv">
+                <source src="media/video/Chrome_ImF.webm">
+            </video>
+            <video controls autoplay muted>
+
+                <source src ="media/video/html5.mp4">
+            </video>
+        </article>
+    </section>
+</body>
+
+</html>
