@@ -1,0 +1,81 @@
+/*Si se usa el import, aquí se debería poner
+*/
+
+
+/*
+La fuente esta descargada
+*/
+
+@font-face {
+    font-family: 'Courier-especial';
+    src: url(Courier_Prime/CourierPrime-Bold.ttf)
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1024px;
+    background-color: #efe1fc;
+    font-family: 'Courier-especial';
+}
+
+
+/* Si no le pongo margin, algunos elementos ya lo traen por default*/
+
+body header {
+    background-color: #e4e4f7;
+    text-align: center;
+    /* Es el color de la letra*/
+    color: #000;
+    /*Por dentro del elemento*/
+    padding: 50px;
+}
+
+body header h1 {
+    /*Por fuera del elemento, la distancia entre elementos*/
+    margin: 0 auto;
+    font-weight: 700;
+    text-shadow: 5px 5px gray;
+    /*SON FUENTES PRESETERMINADAS*/
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body header nav ul {
+    font-family: 'Courier-especial';
+    background-color: #000;
+}
+
+body header nav ul li {
+    /*Rompa la caja*/
+    display: inline-block;
+    color: grey;
+    margin: 0 15px;
+    padding: 10px;
+    /*Se les agrega un borde al elemento*/
+    border-radius: 5px;
+    /*box-shadow: 5px 5px #fff;*/
+}
+
+body header nav ul li:hover {
+    color: #000;
+    background: #FFF;
+}
+
+#seccion1 {
+    background-color: #FFF;
+    border: 3px solid #000;
+}
+
+#seccion1 article {
+    display: inline-block;
+    border: 2px solid coral;
+    /*Puedo separar mis columnas*/
+    width: 48%;
+    /*PAra alinearlas verticalmente*/
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: cornflowerblue;
+    text-align: center;
+}
