@@ -1,0 +1,144 @@
+/*
+REGLA: En css se hacen reglas
+    selector {
+        propiedad: valor; <-- solo es para ir separando
+    }
+Selectores basicos
+*/
+
+
+/*SELECTOR DE ETIQUETAS: aplicara para todas las etiquetas
+Preferentemente para etiquetas no repetidas.
+
+a {
+    color: red;
+}
+*/
+
+
+/* SELECTOR DE CLASES: Se hace referencia con un punto(.)
+.parrafo {
+    color: blue;
+}
+*/
+
+
+/*SELECTOR DE ID: Se hace referencia con el Gato o almohadilla (#)
+Usado si no se repite el estilo a un elemento
+#parrafo {
+    color: green;
+}
+*/
+
+
+/*SELECTOR UNIVERSAL, se hace referencia con un *, se recomienda solo para resetear el estilo
+del navegador
+*{
+    background:red;
+}
+normalize la pagina para ver cositas... De los estilos de los navegadores
+*/
+
+
+/*SELECTOR DE ATRIBUTOS: Ya no llamas a un elemento, se hace mediante atributos
+Se hace referencia con [atributo], se seecciona los elementos que tengan ese atributo
+
+*/
+
+[href] {
+    color: burlywood;
+}
+
+
+/*Seleccionar los elementos que tengan ese atributo y ese valor
+
+
+*/
+
+[href="#"] {
+    color: #7fc77f;
+}
+
+
+/*Seleccionar los elementos que tienen ese atributo y ese
+valor almenos una vez
+~= para decir que contenga minimo eso..
+
+
+|= Para especificar que dice que empiece con verde
+
+*/
+
+[class~="verde"] {
+    color: rgb(53, 22, 82);
+}
+
+
+/* Seleccionar los elementos que tienen ese atributo y exactamente
+ese valor o empiece por el valor seguido de un guion */
+
+[class|="verde"] {
+    color: rgb(97, 192, 184);
+}
+
+
+/*Seleccionar los elementos que tienen ese atributo
+y que empiecen por ese valor*/
+
+[class^="rojo"] {
+    color: rgb(234, 0, 255);
+}
+
+
+/*Seleccionar los elementos que tienen ese atributo 
+y terminen por ese valor */
+
+[class$="verde"] {
+    color: brown;
+}
+
+
+/*
+Body podría ser considerado padre
+a podría ser hermanos
+p tienen un hijo que es span
+*/
+
+
+/*Selectores combinadores */
+
+
+/*Selector de hermano adyacente
+selecciona un hermano que este justo debajo, hermano inferior*/
+
+h1+h2 {
+    color: red;
+}
+
+
+/* Selectores de hermano general, aplica los estilos a todos los hermanos
+que esten debajo de el que compartir el mismo padre
+*/
+
+h1~h3 {
+    color: blue;
+}
+
+
+/*Selectores descendentes*/
+
+div span {
+    color: pink;
+}
+
+
+/*Selector de hijo directo, busca relación directa*/
+
+p>span {
+    color: blue;
+}
+
+
+/*
+Selectores de etiqueta
+*/
