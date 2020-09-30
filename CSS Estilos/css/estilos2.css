@@ -1,0 +1,83 @@
+/*Herencia
+se utilizo el valor de inherit
+*/
+
+p {
+    color: green;
+    font-size: 30px;
+}
+
+a {
+    /*Le digo que lo quiero heredar del padre, se le dice que seleccione el color del elemento padre*/
+    color: inherit;
+}
+
+
+/*Especificidad -->>
+Todos los valores tienen cierto peso. Van a deinir cual tiene más importancia
+
+*/
+
+
+/*Cascada, el orden que se le aplicara los estilos al html
+"Me va a ganar el ultimo color que tengo hasta abajo, es el que tiene más importancia".-cascada´
+Importancia del más bajo al más grande
+Etiquetas --> 1
+Clases --> 10
+ID --> 100
+Estilos en línea --> 1000 es el que se escribe en HTML, style
+!important --> Gana a todos atributo:valor !important;
+*/
+
+.parrafo {
+    color: red;
+}
+
+#parrafo {
+    color: purple;
+}
+
+p {
+    color: blue !important;
+}
+
+#parrafo {
+    color: orange;
+}
+
+
+/*Box model*/
+
+h1 {
+    background: lightblue;
+    width: 100px;
+    height: 300px;
+}
+
+div {
+    background: lightcoral;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+
+/*Inline: no se les puede cambiar el ancho ni el alto*/
+
+a {
+    background: lightgreen;
+    height: 100px;
+}
+
+span {
+    background: red;
+    height: 100px;
+}
+
+.caja1 {
+    background: lightgreen;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+}
