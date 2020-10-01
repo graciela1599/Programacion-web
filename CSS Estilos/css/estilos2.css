@@ -76,8 +76,11 @@ span {
 
 .caja1 {
     background: lightgreen;
+    /*border: width style color;*/
     border: 3px solid black;
-    padding: 10px;
-    /*margin: 20px;*/
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+    /*margin:y x bottom left;
+    Orden de las manecillas del reloj, empezando desde arriba*/
     box-sizing: border-box;
 }

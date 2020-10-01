@@ -1,0 +1,110 @@
+/*Posicion*/
+
+
+/*
+Flujo HTML: es el orden en el que aparecen los elementos
+en el documento
+Espacio: Es el espacio que ocupa el elemento en el documento,
+lo reserva el navegador.
+*/
+
+.parrafo1 {
+    /*visibility: hidden; [Elemento reserva su espacio]*/
+    display: none;
+    /*El espacio no se respetaa*/
+}
+
+
+/*Relative*/
+
+.contenedor1,
+.contenedor2 {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.contenedor1 {
+    background: lightcoral;
+    /*relative: Por defecto tiene la propiedad z-index*/
+    /*Relative: Conserva su espacio*/
+    position: relative;
+    /*top right bottom left z-index
+    top y left tienen mayor preferencia*/
+    top: 100px;
+    right: 30000px;
+    left: 50px;
+    bottom: 1000px;
+    z-index: 10;
+}
+
+.contenedor2 {
+    background: lightcyan;
+    position: relative;
+    z-index: 20;
+}
+
+
+/*ABSOLUTE*/
+
+.contenedor {
+    width: 300px;
+    height: 300px;
+    border: 6px double black;
+    /*Se suele usar para almacenar elementos que guarda absolutamente*/
+    position: relative;
+    margin-top: 300px;
+}
+
+
+/*Seleccionar los elementos que tienen este atributo y empiecen por ese valor*/
+
+[class^="caja"] {
+    width: 40px;
+    height: 40px;
+}
+
+.caja1 {
+    background: rgb(228, 82, 82);
+    /*No conserva su espacio*/
+    position: absolute;
+    /*Se mueve a partir del body, si el contenedor no es relative*/
+    top: 0;
+    left: 0;
+}
+
+.ejemplo {
+    position: absolute;
+    margin: 10% 40%;
+}
+
+.caja2 {
+    background: rgb(228, 165, 82);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.caja3 {
+    background: rgb(228, 206, 82);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.caja4 {
+    background: rgb(172, 228, 82);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.caja5 {
+    background: rgb(82, 187, 228);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
