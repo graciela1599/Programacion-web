@@ -53,7 +53,7 @@ lo reserva el navegador.
     border: 6px double black;
     /*Se suele usar para almacenar elementos que guarda absolutamente*/
     position: relative;
-    margin-top: 300px;
+    /*margin-top: 300px;*/
 }
 
 
@@ -107,4 +107,59 @@ lo reserva el navegador.
     left: 0;
     right: 0;
     margin: auto;
+}
+
+
+/*FIXED*/
+
+body {
+    margin: 0 auto;
+}
+
+.menu {
+    background: rgba(130, 202, 152);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    /*Posicion fijo, ignora el scroll*/
+    /*position: fixed;
+    width: 100%;
+    top: 0;*/
+    position: sticky;
+    top: 0px;
+}
+
+.titulo {
+    margin: 0;
+}
+
+
+/*Position Sticky: Combinación entre absolute, fixed*/
+
+.banner {
+    height: 100px;
+    background: darkgray;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}
+
+
+/* Display
+inline
+block
+inline-block
+none*/
+
+.linea {
+    /*display: block;*/
+    background: lightcoral;
+    /*margin-right: 40px;
+    margin-top: 100px;*/
+    display: inline-block;
+}
+
+.bloque {
+    /*display: inline;*/
+    background: yellow;
 }
