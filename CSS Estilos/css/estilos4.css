@@ -1,8 +1,9 @@
 /*Pseudoelementos
+Los cinco más utilizados :D
 ::first-letter - elementos en bloque
 ::first-line - elementos en bloque
 ::selection
-::before
+::before 
 ::after
 */
 
@@ -25,4 +26,145 @@
 
 .texto::selection {
     background-color: lightcoral;
+}
+
+
+/* ::before y :: after
+Propiedad obligatoria: content.
+Por defecto son elementos en línea, y se pueden visualizar como hijos del elemento.
+*/
+
+.dinero::before {
+    content: '$';
+    color: red;
+}
+
+.dinero::after {
+    content: ".00";
+    color: red;
+}
+
+.ejemplo::before,
+.ejemplo::after {
+    background: brown;
+    width: 10px;
+    height: 10px;
+    content: '';
+    display: inline-block;
+}
+
+
+/* Pseudoclases
+Dinamicas:
+:link -link no visitado
+:visited - link visitado
+:active - al momento del click
+:focus
+*/
+
+.enlace:link {
+    color: green;
+}
+
+.enlace:visited {
+    color: red;
+}
+
+.enlace {
+    padding: 10px;
+    display: inline-block;
+    /*Quitarle la rayita del enlace*/
+    color: black;
+    background: rgb(238, 184, 232);
+    text-decoration: none;
+}
+
+.enlace:active {
+    background: beige;
+    transform: scale(.9);
+}
+
+input:focus {
+    background: yellow;
+    font-size: 15px;
+}
+
+
+/* Estado
+:enabled
+:disabled
+:required
+:opcional
+:valid
+:invalid
+:in-range
+:out-of-range
+*/
+
+.input,
+.label {
+    display: block;
+}
+
+.input:enabled {
+    /* background: khaki;*/
+}
+
+.input:disabled {
+    border: 1px solid black;
+}
+
+.input:required {
+    background: rgb(252, 190, 190);
+}
+
+.checkbox,
+.checkbox+label {
+    display: inline-block;
+}
+
+.input:checked+label {
+    font-size: 30px;
+}
+
+.input:in-range {
+    background: rgb(164, 231, 164);
+}
+
+.input:out-of-range {
+    background: rgb(252, 190, 190);
+}
+
+
+/* Estructurales
+child
+:firts-child -seleccionamos el primer hijo - no importa el tipo del elemento
+:last-child 
+
+
+:nth-child(n) - Seleccionaría al hijo n
+:nth-last-child(n) - Seleccionaría al hijo n
+:only-child - Tu contenedor solo debe tener un hijo
+
+valores: 
+odd-impares
+even - pares
+numeros enteros
+
+type:
+:first-of-type
+:last-of-type
+:nth-of-type()
+*/
+
+div:first-child {
+    background: green;
+}
+
+.parrafo:nth-child(odd) {
+    background: rgb(233, 180, 83);
+}
+
+.parrafo:nth-child(even) {
+    background: rgb(241, 216, 168);
 }
