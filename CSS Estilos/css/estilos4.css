@@ -106,9 +106,11 @@ input:focus {
     display: block;
 }
 
-.input:enabled {
-    /* background: khaki;*/
+
+/*.input:enabled {
+     background: khaki;
 }
+*/
 
 .input:disabled {
     border: 1px solid black;
