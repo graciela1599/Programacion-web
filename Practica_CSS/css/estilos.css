@@ -42,7 +42,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    padding: 15px 43px 10px 43px;
+    padding: 3% 6% 2% 6%;
     border-right: 2px solid black;
 }
 
@@ -52,6 +52,11 @@ header nav ul li:last-child {
 
 header nav ul:first-child {
     padding-left: 35%;
+}
+
+header nav ul li:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .sec1 article {
@@ -78,14 +83,14 @@ header nav ul:first-child {
 }
 
 .art2 img {
-    width: 710px;
+    width: 100%;
     vertical-align: top;
 }
 
 h1 {
-    font-size: 70px;
-    line-height: 60px;
-    padding-bottom: 8px;
+    font-size: 450%;
+    line-height: 80%;
+    padding-bottom: 2%;
 }
 
 h1,
@@ -104,19 +109,19 @@ h1,
 }
 
 .ask-mom {
-    font-size: 45px;
-    line-height: 35px;
+    font-size: 320%;
+    line-height: 80%;
 }
 
 .ask-mom2 {
-    font-size: 40px;
+    font-size: 280%;
 }
 
 .descripcion {
     text-align: left;
     width: 90%;
-    font-size: 10px;
-    line-height: 20px;
+    font-size: 78%;
+    line-height: 130%;
     font-weight: 600;
 }
 
@@ -135,7 +140,7 @@ footer section article {
 }
 
 footer section article {
-    font-size: 12px;
+    font-size: 85%;
 }
 
 .art1-footer,
@@ -147,17 +152,17 @@ footer section article {
 }
 
 .text-style {
-    line-height: 20px;
+    line-height: 100%;
     color: white;
     font-family: 'Big_Shoulders_Display';
-    font-size: 20px;
+    font-size: 160%;
 }
 
 .art2-footer {
-    padding-right: 200px;
+    padding-right: 10%;
     float: right;
     text-align: center;
-    width: 340px;
+    width: 30%;
 }
 
 .mail {
