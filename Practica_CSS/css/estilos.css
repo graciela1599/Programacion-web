@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url(Oswald/Oswald-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Big_Shoulders_Display';
+    src: url(Big_Shoulders_Display/BigShouldersDisplay-Bold.ttf);
+}
+
+body {
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    position: relative;
+    margin: 10px 5px 5px 10px;
+    font-family: 'Oswald';
+    margin: 15px, 20px;
+}
+
+.menu {
+    position: absolute;
+    left: 20%;
+    bottom: 10px;
+    width: 70%;
+    height: 80px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.logo {
+    /*position: absolute;*/
+    width: 6%;
+}
+
+header nav ul {
+    border-bottom: 2px solid black;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 15px 43px 10px 43px;
+    border-right: 2px solid black;
+}
+
+header nav ul li:last-child {
+    border-right: 0px solid black;
+}
+
+header nav ul:first-child {
+    padding-left: 35%;
+}
+
+.sec1 article {
+    display: inline-block;
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+}
+
+.sec1 {
+    margin: 0 50px 0 120px;
+    padding: 50px 0 100px 30px;
+    height: 400px;
+}
+
+.art1 {
+    width: 25%;
+    height: 60%;
+    vertical-align: top;
+}
+
+.art2 {
+    width: 50%;
+}
+
+.art2 img {
+    width: 710px;
+    vertical-align: top;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 60px;
+    padding-bottom: 8px;
+}
+
+h1,
+.ask-mom,
+.ask-mom2 {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+.ask-mom,
+.ask-mom2 {
+    display: block;
+    padding: 0;
+    font-weight: 700;
+}
+
+.ask-mom {
+    font-size: 45px;
+    line-height: 35px;
+}
+
+.ask-mom2 {
+    font-size: 40px;
+}
+
+.descripcion {
+    text-align: left;
+    width: 90%;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+footer {
+    color: gray;
+    background: black;
+}
+
+footer section {
+    height: 129px;
+}
+
+footer section article {
+    display: inline-block;
+    width: 40%;
+}
+
+footer section article {
+    font-size: 12px;
+}
+
+.art1-footer,
+.art2-footer {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 60px;
+    margin-top: 25px;
+    vertical-align: top;
+}
+
+.text-style {
+    line-height: 20px;
+    color: white;
+    font-family: 'Big_Shoulders_Display';
+    font-size: 20px;
+}
+
+.art2-footer {
+    padding-right: 200px;
+    float: right;
+    text-align: center;
+    width: 340px;
+}
+
+.mail {
+    color: rgb(77, 77, 77);
+}
