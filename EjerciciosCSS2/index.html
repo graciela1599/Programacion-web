@@ -31,7 +31,7 @@
     </header>
     <section class="seccion1">
         <article class="secc1art1">
-            <img src="img/slider.jpg" alt="">
+            <img src="img/slider.jpg" alt="" class="slider">
         </article>
         <article class="secc1art2">
             <h2>Titulo del post</h2>
@@ -41,13 +41,13 @@
                     Por <span class="italica-autor">Admin</span> El <span class="italica-autor">30/05/2012</span> En <span class="italica-autor">Pruebas</span>
                 </span>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum accusantium eius quaerat! Quam minus similique voluptates quidem quaerat excepturi! Nisi, id rerum labore dolorum quasi quod nobis? Ut, tenetur omnis.</p>
-                <input type="submit" value="Leer Mas...">
+                <input type="submit" value="Leer Mas..." id="leer-mas">
             </div>
         </article>
     </section>
     <aside>
         <div class="publicidad">
-            <div class="barra">Publicidad</div>
+            <div class="barra centrar">Publicidad</div>
             <div class="publicidad-imagenes">
                 <img src="img/publicidad.jpg" alt="">
                 <img src="img/publicidad.jpg" alt="">
@@ -56,14 +56,16 @@
             </div>
         </div>
         <div class="buscador">
-            <div class="barra">Buscador</div>
+            <div class="barra centrar">Buscador</div>
             <form action="#">
-                <input type="search" placeholder="Search...">
-                <input type="submit" value="Go">
+                <span>
+                    <input type="search" placeholder="Search..." class="form-buscador">
+                    <input type="submit" value="Go" class="form-boton">
+                </span>
             </form>
         </div>
         <div class="categorias">
-            <div class="barra">Categorias</div>
+            <div class="barra centrar">Categorias</div>
             <ul>
                 <li>Categoria 1</li>
                 <li>Categoria 2</li>
