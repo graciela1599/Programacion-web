@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    max-width: 1024px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    margin: 30px;
+}
+
+header {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+#buscador {
+    float: right;
+    margin: 20px 10px 0 0;
+    width: 200px;
+    border: 2px solid black;
+}
+
+#banner {
+    width: 100%;
+}
+
+#Pintura {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    /*Numero positivo más para enfrente, en el z-index*/
+    z-index: -1;
+}
+
+header nav ul {
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    color: silver;
+    font-size: 25px;
+    border-bottom: 2px solid silver;
+}
