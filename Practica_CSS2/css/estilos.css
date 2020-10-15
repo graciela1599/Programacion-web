@@ -1,3 +1,275 @@
 body {
     margin: 0 auto;
+    width: 1024px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eaeaea;
+}
+
+header {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.logo {
+    text-align: center;
+    background: #1a587c;
+}
+
+.logo img {
+    width: 25%;
+}
+
+header nav ul {
+    margin: 20px;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 3px 10px 3px 3px;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #494949;
+}
+
+.sec1,
+aside {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sec1 {
+    width: 73%;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+}
+
+section article div {
+    display: inline-block;
+}
+
+aside {
+    width: 24%;
+    margin-right: 25px;
+    left: 0;
+}
+
+.title {
+    text-align: left;
+    margin: 18px 0 20px 0;
+    font-weight: 600;
+    color: #595959;
+    vertical-align: middle;
+}
+
+.sec1 article {
+    padding: 7px 20px;
+}
+
+.sec1art1 div,
+.sec1art2 div,
+.sec1art3 div {
+    text-align: center;
+}
+
+.cuadro {
+    font-size: 12px;
+    width: 20%;
+    height: 100px;
+    margin: 0 8px;
+    padding: 7px;
+    color: white;
+    border-radius: 7px;
+}
+
+.cuadro img {
+    width: 30%;
+    vertical-align: middle;
+}
+
+.verde {
+    background: #04af50;
+}
+
+.amarillo {
+    background: #ffbf00;
+}
+
+.morado {
+    background: #702fa0;
+}
+
+.tinto {
+    background: #9e2836;
+}
+
+.sec1art2 {
+    text-align: center;
+}
+
+.panels {
+    width: 32%;
+    font-size: 11px;
+    color: silver;
+}
+
+.panels img {
+    width: 100%
+}
+
+.text-graf {
+    line-height: 14px;
+    padding: 10px 5px;
+}
+
+.porcentaje {
+    color: white;
+    font-size: 25px;
+}
+
+.azu-bb,
+.amar-bb,
+.rosa-bb {
+    width: 100%;
+}
+
+.azu-bb {
+    background: #bbe7ef;
+}
+
+.amar-bb {
+    background: #faebcc;
+}
+
+.rosa-bb {
+    background: #eacbd0;
+}
+
+.Pazu-bb {
+    border: 1px solid #bbe7ef;
+}
+
+.Pamar-bb {
+    border: 1px solid #faebcc;
+}
+
+.Prosa-bb {
+    border: 1px solid #eacbd0;
+}
+
+.sec1art3 {
+    text-align: center;
+}
+
+.user {
+    width: 21%;
+    height: 65%;
+}
+
+.user {
+    background: #437b92;
+    vertical-align: top;
+    margin: 10px;
+    padding: 10px 0 20px 0;
+}
+
+.user-img {
+    width: 60%;
+}
+
+.user img {
+    margin: 20px 15px;
+    border-radius: 100px;
+}
+
+.user-3 {
+    width: 63%;
+}
+
+.user-4 {
+    width: 57%;
+}
+
+input[type="submit"] {
+    background: #c3e0f2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 11px;
+    width: 70px;
+    height: 20px;
+}
+
+
+/* ASIDE */
+
+.Panel-Links {
+    margin: 20px 0 3px 8px;
+}
+
+.color-Progress {
+    background: white;
+    padding-bottom: 10px;
+}
+
+.color-Links {
+    background: #44718b;
+}
+
+.barra {
+    margin: 0;
+    background: #1b577b;
+    color: white;
+    padding: 15px 13px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Panel-Links ul li {
+    list-style-type: none;
+    margin: 0;
+    vertical-align: middle;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+}
+
+.Panel-Links ul li img {
+    width: 8%;
+}
+
+.Panel-Links ul {
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+
+.P-bar {
+    margin: 7px 0 6px 8px;
+    color: #686868;
+}
+
+.proBar[value]::-webkit-progress-bar {
+    background-color: #f5f5f5;
+}
+
+.proBar {
+    margin: 5px;
+    width: 95%;
+    height: 20px;
+    appearance: none;
+}
+
+.proBar[value]::-webkit-progress-value {
+    background-color: #5f4878;
+}
+
+.ver-bar[value]::-webkit-progress-value {
+    background-color: #4e8542;
+}
+
+.nar-bar[value]::-webkit-progress-value {
+    background-color: #f07e09;
 }
