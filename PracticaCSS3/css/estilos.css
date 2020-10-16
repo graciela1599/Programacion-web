@@ -34,6 +34,7 @@ header {
 
 header nav ul {
     text-align: center;
+    margin: 0 auto;
 }
 
 header nav ul li {
@@ -42,4 +43,88 @@ header nav ul li {
     color: silver;
     font-size: 25px;
     border-bottom: 2px solid silver;
+}
+
+aside {
+    position: absolute;
+    top: 210px;
+    display: inline-block;
+    width: 24%;
+}
+
+.seccion1,
+.seccion2 {
+    display: inline-block;
+    width: 74%;
+}
+
+.seccion2 {
+    margin: 20px 0;
+}
+
+.seccion2 article {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    width: 30%;
+}
+
+.seccion1 {
+    text-align: center;
+    position: relative;
+}
+
+#bg-offer {
+    position: absolute;
+    top: -90px;
+    left: -45px;
+}
+
+#slide {
+    width: 95%;
+}
+
+.seccion2 article h3 {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    padding: 18px 0;
+    font-size: 17px;
+}
+
+.seccion2 article p {
+    font-size: 12px;
+}
+
+.seccion2 img {
+    width: 25%;
+}
+
+.rosa,
+.sec2art1 a,
+aside h3,
+aside h4,
+.telefono {
+    color: #ea078d;
+}
+
+aside h3 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+.verde {
+    color: green;
+}
+
+.azul,
+.sec2art3 a {
+    color: #6199d4
+}
+
+.seccion2 article a {
+    font-size: 12px;
+    text-decoration: none;
 }
