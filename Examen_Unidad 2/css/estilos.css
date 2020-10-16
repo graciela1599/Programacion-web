@@ -130,7 +130,8 @@ h2 {
 }
 
 footer {
-    height: 200px;
+    height: 150px;
+    margin-bottom: 20px;
 }
 
 .order-book {
