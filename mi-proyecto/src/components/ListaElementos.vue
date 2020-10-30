@@ -30,7 +30,7 @@ export default {
     data(){
         return{
             misElementos: this.elementos,
-            total:0
+            total: 0
         }
     },
     methods:{
@@ -42,12 +42,14 @@ export default {
         }
     },
     computed:{
-        sumarCantidad(){
-            this.total = 0;
+        sumarCantidad (){
+            
+            var totalito = 0;
             for(let el of this.misElementos){
-                this.total+=el.cantidad;
+                totalito+= el.cantidad;
             }
-            return this.total;
+          
+            return totalito;
         }   
     }
 }
