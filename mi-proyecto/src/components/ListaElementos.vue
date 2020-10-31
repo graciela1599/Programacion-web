@@ -43,7 +43,6 @@ export default {
     },
     computed:{
         sumarCantidad (){
-            
             var totalito = 0;
             for(let el of this.misElementos){
                 totalito+= el.cantidad;
