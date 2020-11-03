@@ -1,3 +1,5 @@
+const { createBlock } = require("vue");
+
 console.log("Hola de nuevo");
 
 // Variables: var y let
@@ -9,6 +11,11 @@ var mes = 'Octubre'; // texto
 mes = 10; // number
 console.log(typeof(mes));
 
+document.createElement("p");
+var p = document.getElementById("p");
+p.style.display = inlineBlock;
+p.style.background = orange;
+p.style.width = 50;
 
 var hola = null;
 
