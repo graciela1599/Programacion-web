@@ -2,7 +2,7 @@
 <div>
   <div v-for="todo in doneTodos" :key="todo.id">
     {{todo.title}}
-    <p>{{todo.completed}}</p>
+    <p>{{todo.completed ? 'Completo' : 'Incompleto'}}</p>
     <hr>
   </div>
 </div>
