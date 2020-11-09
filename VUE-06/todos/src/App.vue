@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view class="container mt-4"/>
+
   </div>
 </template>
 

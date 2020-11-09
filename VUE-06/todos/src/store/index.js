@@ -4,8 +4,9 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-    state: {
-        todos: []
+    state: { // datos almacenados que podemos llamar desde cualquier parte del proyecto
+        todos: [],
+        tituloTabla: 'desde State'
     },
     mutations: {
         SET_TODO(state, todo) {
@@ -13,8 +14,13 @@ export default new Vuex.Store({
         }
     },
     actions: {
-        setTodo({ commit }, todo) {
-            commit('SET_TODO', todo);
+        setTodo({ commit }, todo) { // Commit - vas a realizar algo y va a quedar hecho
+            commit('SET_TODO', todo); // La acción se va a cumplir que se va a cumplir
+        }
+    },
+    getters: {
+        traerTitulo: state => {
+            return state.tituloTabla;
         }
     },
     modules: {}
