@@ -1,10 +1,11 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Inicio</router-link> | <!-- Las que te permiten ir navegando-->
-    <router-link to="/about">Acerca de</router-link>
-    <router-link to="/Peliculas">Peliculas</router-link>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/random">Random</router-link>
+    </div>
+    <router-view/>
   </div>
-  <router-view/>
 </template>
 
 <style>
@@ -15,8 +16,12 @@
   text-align: center;
   color: #2c3e50;
 }
+router-link{
+  margin:0;
+}
 
 #nav {
+  background-color: #F8BB00;
   padding: 30px;
 }
 
@@ -26,6 +31,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #0052C4;
 }
 </style>
