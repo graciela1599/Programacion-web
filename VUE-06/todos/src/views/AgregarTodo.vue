@@ -9,33 +9,33 @@
         <hr>
         <div>Tipos</div>
         <div class="form-check form-check-inline">
-          <input v-model="todo.tipos" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="hogar">
+          <input v-model="todo.tipos" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Hogar">
           <label class="form-check-label" for="inlineCheckbox1">Hogar</label>
         </div>
         <div class="form-check form-check-inline">
-          <input v-model="todo.tipos" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="escuela">
+          <input v-model="todo.tipos" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Escuela">
           <label class="form-check-label" for="inlineCheckbox2">Escuela</label>
         </div>
         <div class="form-check form-check-inline">
-          <input v-model="todo.tipos" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="oficina">
+          <input v-model="todo.tipos" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Oficina">
           <label  class="form-check-label" for="inlineCheckbox3">Oficina</label>
         </div>
         <div class="form-check form-check-inline">
-          <input v-model="todo.tipos" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="calle">
+          <input v-model="todo.tipos" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Calle">
           <label  class="form-check-label" for="inlineCheckbox3">Calle</label>
         </div>
         <hr>
         <div>Prioridad</div>
         <div class="form-check form-check-inline">
-          <input v-model="todo.prioridad" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="baja">
+          <input v-model="todo.prioridad" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Baja">
           <label class="form-check-label" for="inlineRadio1">Baja</label>
         </div>
         <div class="form-check form-check-inline">
-          <input v-model="todo.prioridad" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="media">
+          <input v-model="todo.prioridad" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Media">
           <label class="form-check-label" for="inlineRadio1">Media</label>
         </div>
         <div class="form-check form-check-inline">
-          <input v-model="todo.prioridad" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="alta">
+          <input v-model="todo.prioridad" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Alta">
           <label class="form-check-label" for="inlineRadio1">Alta</label>
         </div>
         
@@ -76,6 +76,7 @@ export default {
       console.log(this.todo.id);
       this.setTodo(this.todo);
       this.limpiarTodo();
+      this.$router.push({name:'Home'});
     },
     limpiarTodo(){
       this.todo = {

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router' // esto es documentación de vue
 import Home from '../views/Home.vue'
 import AgregarTodo from '../views/AgregarTodo.vue'
+import EditarTodo from '../views/EditarTodo.vue'
 
 Vue.use(VueRouter) // Con esto digo que mi proyecto utilizará la ruta de vue
 
@@ -22,6 +23,10 @@ const routes = [{ // Para poner las rutas en el nav
         path: '/AgregarTodo',
         name: 'AgregarTodo',
         component: AgregarTodo
+    }, {
+        path: '/editar-todo/:id',
+        name: 'EditarTodo',
+        component: EditarTodo
     }
 ]
 
