@@ -70,11 +70,11 @@ export default {
     }
   },
   methods:{
-    ...mapActions(['setTodo']),
+    ...mapActions(['setTodos']),
     guardarTodo(){
       this.todo.id=nanoid(5);
       console.log(this.todo.id);
-      this.setTodo(this.todo);
+      this.setTodos(this.todo);
       this.limpiarTodo();
       this.$router.push({name:'Home'});
     },
