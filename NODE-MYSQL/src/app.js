@@ -11,10 +11,10 @@
   app.use(express.urlencoded({ extended: true }));
 
   //Base de datos
-  require('../config/connection');
+  require('./config/connection');
 
-  //Rutas
-  app.use(require('../routes/personasRoute'));
+  //Rutas: Aquí se agregan las rutas
+  app.use(require('./routes/personasRoute'));
 
   //Levantar el servidor
   app.listen(app.get('port'), (error) => {
