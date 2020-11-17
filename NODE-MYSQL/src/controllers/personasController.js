@@ -44,12 +44,12 @@ function crear(req, res) {
         if (persona.telefono && persona.telefono.length != 10) {
             return res.status(400).send({ error: true, mensaje: "El telefono debe ser 10 caracteres" });
         }
-        let sql = 'INSERT INTO PERSONAS set ?';
+        let sql = 'INSERT INTO PERSONAS set ? ';
         connection.query(sql, [persona], (err, row) => {
             if (err) {
                 res.json(err);
             } else {
-                res.json({ error: false, data: row, mensaje: "Persona creada con exito" });
+                res.json({ error: false, data: row, mensaje: "Persona creada con exito." });
             }
         });
     }
