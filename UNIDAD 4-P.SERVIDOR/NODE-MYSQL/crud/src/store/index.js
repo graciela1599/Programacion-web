@@ -20,6 +20,13 @@ export default new Vuex.Store({
                     console.log(response)
                     commit('SET_PERSONAS', response.data)
                 })
+        },
+        crearPersona({ commit }, { params, onComplete }) {
+            axios.post('http://localhost:3000/', params)
+                .then(onComplete)
+                .catch(error => {
+                    console.log(error);
+                })
         }
     },
     getters: {

@@ -1,5 +1,6 @@
 <template>
     <div>
+        
         <b-table striped bordered :items="items" :fields="fields"></b-table>
     </div>
 </template>

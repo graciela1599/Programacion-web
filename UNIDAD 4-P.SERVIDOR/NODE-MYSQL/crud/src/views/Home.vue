@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <h1>Personas</h1>
+    <b-button variant="primary" class="float-right mb-3" to="/agregar-persona">Agregar</b-button>
     <Table :fields="campos" :items="allPersonas" />
   </div>
 </template>
