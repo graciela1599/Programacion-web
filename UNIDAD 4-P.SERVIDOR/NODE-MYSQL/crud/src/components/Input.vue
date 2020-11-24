@@ -3,6 +3,8 @@
       <label :for="id">{{label}}</label>
       <!--Para agarrar lo escrito en la vista se pone @input="$emit('input',$event.target.value)"-->
       <input :id="id" :type="type" class="form-control" :maxlength="maxlength" :value="value" :disabled="disabled" :placeholder="placeholder" @input="$emit('input',$event.target.value)" />
+      <span v-if="error" class="text-danger">{{mensajeError}}</span>
+    
   </div>
 </template>
 
@@ -37,6 +39,14 @@ export default {
         placeholder:{
             type:String,
             default:'Ingrese campo'
+        },
+        mensajeError:{
+            type: String,
+            default: 'Campo obligatorio'
+        },
+        error:{
+           type: Boolean,
+           default: false 
         }
     }
 }

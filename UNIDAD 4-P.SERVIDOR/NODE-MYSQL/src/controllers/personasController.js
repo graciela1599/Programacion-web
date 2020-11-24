@@ -18,7 +18,7 @@ function listar(req, res) {
 function obtenerPersona(req, res) {
     if (connection) {
         const { id } = req.params;
-        let sql = `select * from personas where id= ${connection.escape(id)}`;
+        let sql = `SELECT * FROM PERSONAS WHERE ID= ${connection.escape(id)}`;
         connection.query(sql, (err, persona) => {
             if (err) {
                 res.json(err)
@@ -26,7 +26,7 @@ function obtenerPersona(req, res) {
                 let mensaje = "";
                 if (persona === undefined || persona.length === 0)
                     mensaje = "persona no encontrada"
-                    // data --> donde se encuentran los resultados... Tu decides el nombre
+
                 res.json({ error: false, data: persona, mensaje: mensaje })
             }
         })
@@ -59,7 +59,9 @@ function editar(req, res) {
     if (connection) {
         const { id } = req.params;
         const personas = req.body;
-        let sql = "UPDATE PERSONAS set ? where id = ?";
+
+
+        let sql = "UPDATE PERSONAS set ? WHERE ID = ?";
         connection.query(sql, [personas, id], (err, rows) => {
             if (err) {
                 res.json(err);
